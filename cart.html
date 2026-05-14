@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KrishCart Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Krish<span>Cart</span>
+        </div>
+
+        <div class="nav-right">
+
+            <a href="index.html" class="cart-btn">
+
+                <i class="ri-home-5-line"></i>
+
+            </a>
+
+            <button class="logout-btn" onclick="logout()">
+
+                <i class="ri-logout-box-r-line"></i>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+    <section class="cart-section">
+
+        <div class="cart-left">
+
+            <h1 class="main-title">
+                Shopping Cart
+            </h1>
+
+            <div id="cartItems"></div>
+
+        </div>
+
+        <div class="cart-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-box">
+
+                <div class="summary-row">
+                    <span>Items</span>
+                    <span id="itemCount">0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span>₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span>₹0</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="grandTotal">₹0</span>
+                </div>
+
+                <button class="checkout-btn" onclick="checkout()">
+                    Checkout Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="popup" id="popup">
+
+        <div class="popup-card">
+
+            <i class="ri-checkbox-circle-fill"></i>
+
+            <h2>Order Successful 🎉</h2>
+
+            <p>
+                Thank You For Shopping With KrishCart
+            </p>
+
+            <button onclick="closePopup()">
+                Continue Shopping
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+
+    <script src="cart.js"></script>
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>

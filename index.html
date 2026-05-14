@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KrishCart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Krish<span>Cart</span>
+        </div>
+
+        <div class="nav-right">
+
+            <div class="user-box">
+
+                <i class="ri-user-3-line"></i>
+
+                <span id="userName"></span>
+
+            </div>
+
+            <a href="cart.html" class="cart-btn">
+
+                <i class="ri-shopping-bag-3-line"></i>
+
+            </a>
+
+            <button class="logout-btn" onclick="logout()">
+
+                <i class="ri-logout-box-r-line"></i>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+    <section class="product-section">
+
+        <h1 class="main-title">
+            Trending Products
+        </h1>
+
+        <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+    <script src="data.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>
